@@ -1,33 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Meet landing page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
 
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.
+    <title>Frontend Mentor | Meet landing page</title>
 
-  Download v1.3
-  What is it?
+    <link rel="stylesheet" href="style.css" />
 
-  01
-  Built for modern use
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="flow">
+    <header>
+      <img class="horizontal-center" src="assets/logo.svg" alt="Meet logo" />
+    </header>
 
-  Smarter meetings, all in one place
+    <main>
+      <img
+        class="single-image"
+        src="assets/tablet/image-hero.png"
+        alt="Collage of users"
+      />
+      <img
+        class="split-image"
+        src="assets/desktop/image-hero-left.png"
+        alt="Collage of users"
+      />
+      <div class="max-character-width horizontal-center text-align-center text-flow">
+        <h1 class="font-size-900">Group Chat for Everyone</h1>
+        <p class="line-height-2">
+          Meet makes it easy to connect with others face-to-face virtually and
+          collaborate across any device.
+        </p>
+        <button>Download v1.3</button>
+        <button>What is it?</button>
+      </div>
+      <img
+        class="split-image"
+        src="assets/desktop/image-hero-right.png"
+        alt="Collage of users"
+      />
+    </main>
 
-  Send messages, share files, show your screen, and record your meetings — all in one 
-  workspace. Control who can join with invite-only team access, data encryption, and data export.
+    <div class="horizontal-center">
+      <p>01</p>
+    </div>
 
-  02
-  Experience more together
-  Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.
+    <section class="wrapper horizontal-center" aria-labelledby="smarter">
+      <div class="image-grid">
+        <img
+          class="image-tile"
+          src="assets/desktop/image-women-videochatting.jpg"
+          alt="Three women on video call"
+        />
+        <img
+          class="image-tile"
+          src="assets/desktop/image-woman-in-videocall.jpg"
+          alt="A woman on video call"
+        />
+        <img
+          class="image-tile"
+          src="assets/desktop/image-men-in-meeting.jpg"
+          alt="Two men on a video call, one on a laptop screen"
+        />
+        <img
+          class="image-tile"
+          src="assets/desktop/image-man-texting.jpg"
+          alt="A man texting"
+        />
+      </div>
+      <div class="max-character-width horizontal-center text-align-center text-flow">
+      <p class="letter-spacing-1 uppercase text-accent font-size-300">Built for modern use</p>
+      <h2 id="smarter">Smarter meetings, all in one place</h2>
+      <p class="line-height-2">
+        Send messages, share files, show your screen, and record your meetings —
+        all in one workspace. Control who can join with invite-only team access,
+        data encryption, and data export.
+      </p>
+    </div>
+    </section>
 
-  Download v1.3
-</body>
+    <div class="horizontal-center">
+      <p>02</p>
+    </div>
+
+    <footer>
+      <div class="wrapper horizontal-center">
+        <h2>Experience more together</h2>
+        <p class="line-height-2">
+          Stay connected with reliable HD meetings and unlimited one-on-one and
+          group video sessions.
+        </p>
+        <button>Download v1.3</button>
+      </div>
+    </footer>
+  </body>
 </html>
