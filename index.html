@@ -24,28 +24,37 @@
   </head>
   <body class="flow">
     <header>
-      <img class="horizontal-center" src="assets/logo.svg" alt="Meet logo" />
+      <img
+        class="logo | horizontal-center margin-top"
+        src="assets/logo.svg"
+        alt="Meet logo"
+      />
     </header>
 
-    <main>
+    <main class="img-container">
       <img
-        class="single-image"
+        class="single-image horizontal-center"
         src="assets/tablet/image-hero.png"
         alt="Collage of users"
       />
+
       <img
         class="split-image"
         src="assets/desktop/image-hero-left.png"
         alt="Collage of users"
       />
-      <div class="max-character-width horizontal-center text-align-center text-flow">
+      <div
+        class="heading max-character-width text-align-center text-flow padding-inline"
+      >
         <h1 class="font-size-900">Group Chat for Everyone</h1>
         <p class="line-height-2">
           Meet makes it easy to connect with others face-to-face virtually and
           collaborate across any device.
         </p>
-        <button>Download v1.3</button>
-        <button>What is it?</button>
+        <div class="buttons">
+          <button>Download v1.3</button>
+          <button>What is it?</button>
+        </div>
       </div>
       <img
         class="split-image"
@@ -54,12 +63,14 @@
       />
     </main>
 
-    <div class="horizontal-center">
-      <p>01</p>
-    </div>
-
-    <section class="wrapper horizontal-center" aria-labelledby="smarter">
-      <div class="image-grid">
+    <section
+      class="info | wrapper horizontal-center padding-inline margin-top"
+      aria-labelledby="smarter"
+    >
+      <div class="number-tag horizontal-center">
+        <p>01</p>
+      </div>
+      <div class="image-grid margin-top">
         <img
           class="image-tile"
           src="assets/desktop/image-women-videochatting.jpg"
@@ -81,29 +92,42 @@
           alt="A man texting"
         />
       </div>
-      <div class="max-character-width horizontal-center text-align-center text-flow">
-      <p class="letter-spacing-1 uppercase text-accent font-size-300">Built for modern use</p>
-      <h2 id="smarter">Smarter meetings, all in one place</h2>
-      <p class="line-height-2">
-        Send messages, share files, show your screen, and record your meetings —
-        all in one workspace. Control who can join with invite-only team access,
-        data encryption, and data export.
-      </p>
-    </div>
+      <div
+        class="max-character-width horizontal-center text-align-center text-flow margin-top"
+      >
+        <p class="letter-spacing-1 uppercase text-accent font-size-300">
+          Built for modern use
+        </p>
+        <h2 class="small-margin" id="smarter">
+          Smarter meetings, all in one place
+        </h2>
+        <p class="line-height-2">
+          Send messages, share files, show your screen, and record your meetings
+          — all in one workspace. Control who can join with invite-only team
+          access, data encryption, and data export.
+        </p>
+      </div>
     </section>
 
-    <div class="horizontal-center">
-      <p>02</p>
-    </div>
-
-    <footer>
-      <div class="wrapper horizontal-center">
-        <h2>Experience more together</h2>
-        <p class="line-height-2">
+    <footer class="footer | margin-top">
+      <div class="number-tag horizontal-center" data-type="hover">
+        <p>02</p>
+      </div>
+      <picture class="bg-img">
+        <img
+          src="assets/mobile/image-footer.jpg"
+          alt="A woman on a call through headphones"
+        />
+      </picture>
+      <div
+        class="wrapper horizontal-center text-align-center flex-wrap text-neutral-100 z-index-2"
+      >
+        <h2 class="text-neutral-100 z-index-2">Experience more together</h2>
+        <p class="line-height-2 z-index-2">
           Stay connected with reliable HD meetings and unlimited one-on-one and
           group video sessions.
         </p>
-        <button>Download v1.3</button>
+        <button z-index-2>Download v1.3</button>
       </div>
     </footer>
   </body>
