@@ -37,7 +37,7 @@
   /* spacing */
   --space-s: clamp(1rem, 0.6522rem + 1.7391vw, 2rem);
   --space-m: clamp(3rem, 2.3043rem + 3.4783vw, 5rem);
-  --space-l: clamp(9rem, 7.7826rem + 6.087vw, 12.5rem);
+  --space-xl: clamp(9rem, 7.7826rem + 6.087vw, 12.5rem);
 }
 
 /* ---------------- */
@@ -254,7 +254,7 @@ main {
 /* ---------------- */
 
 .logo {
-  --mtop: var(var(--space-m));
+  --mtop: var(--space-m);
 }
 
 .img-container {
@@ -337,7 +337,7 @@ main {
 
 .button:hover,
 .button:focus {
-  background-color: hsl(var(--btn-clr) / 0.6);
+  background-color: hsl(var(--btn-clr) / 0.7);
 }
 
 .button[data-type="secondary-2"]:hover,
@@ -346,7 +346,7 @@ main {
 }
 
 .info {
-  --mtop: var(--space-l);
+  --mtop: var(--space-xl);
 }
 
 .info > * + * {
@@ -413,16 +413,14 @@ picture {
   position: absolute;
   left: 0;
   top: 0;
-
   max-height: 100%;
   min-width: 100%;
   overflow: hidden;
-  border: 1px solid red;
   opacity: 0.15;
   z-index: 0;
 }
 
-picture img {
+picture > * {
   min-width: 100%;
   object-fit: cover;
 }
