@@ -195,6 +195,10 @@ main {
   font-size: var(--fs-300);
 }
 
+.font-weight-bold {
+  font-weight: var(--fw-bold);
+}
+
 .letter-spacing-1 {
   letter-spacing: var(--letter-spacing-1);
 }
@@ -349,6 +353,7 @@ main {
 
 .number-tag {
   font-size: 1rem;
+  font-weight: var(--fw-bold);
   letter-spacing: var(--letter-spacing-1);
   color: hsl(var(--clr-neutral-600));
   background-color: hsl(var(--clr-neutral-100));
