@@ -80,6 +80,7 @@ h2,
 h3,
 h4 {
   font-size: var(--fs-600);
+  font-weight: var(--fw-bold);
   color: hsl(var(--clr-neutral-900));
 }
 
@@ -100,6 +101,7 @@ select {
 button {
   cursor: pointer;
   color: hsl(var(--clr-neutral-100));
+  font-weight: var(--fw-bold);
   background-color: hsl(var(--btn-clr));
   border: 0;
   border-radius: 1.8rem;
