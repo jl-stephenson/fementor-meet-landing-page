@@ -51,9 +51,9 @@
           Meet makes it easy to connect with others face-to-face virtually and
           collaborate across any device.
         </p>
-        <div class="buttons">
-          <button>Download v1.3</button>
-          <button>What is it?</button>
+        <div class="button-row">
+          <button class="button" data-type="primary">Download <span class="text-cyan-300">v1.3</span></button>
+          <button class="button" data-type="secondary">What is it?</button>
         </div>
       </div>
       <img
@@ -70,7 +70,7 @@
       <div class="number-tag horizontal-center">
         <p>01</p>
       </div>
-      <div class="image-grid margin-top">
+      <div class="image-grid | margin-top wrapper">
         <img
           class="image-tile"
           src="assets/desktop/image-women-videochatting.jpg"
@@ -95,7 +95,7 @@
       <div
         class="max-character-width horizontal-center text-align-center text-flow margin-top"
       >
-        <p class="letter-spacing-1 uppercase text-accent font-size-300">
+        <p class="letter-spacing-1 uppercase text-cyan-600 font-size-300">
           Built for modern use
         </p>
         <h2 class="small-margin" id="smarter">
@@ -114,20 +114,30 @@
         <p>02</p>
       </div>
       <picture class="bg-img">
+        <source
+        srcset="assets/desktop/image-footer.jpg"
+        media="(min-width: 64rem)"
+      />
+        <source
+          srcset="assets/tablet/image-footer.jpg"
+          media="(min-width: 48rem)"
+        />
         <img
           src="assets/mobile/image-footer.jpg"
           alt="A woman on a call through headphones"
         />
       </picture>
       <div
-        class="wrapper horizontal-center text-align-center flex-wrap text-neutral-100 z-index-2"
+        class="wrapper horizontal-center text-align-center simple-flex text-neutral-100"
       >
-        <h2 class="text-neutral-100 z-index-2">Experience more together</h2>
-        <p class="line-height-2 z-index-2">
+      <div class="footer__header | z-index-2">
+        <h2 class="text-neutral-100  max-character-width">Experience more together</h2>
+      </div>
+        <p class="footer__content line-height-2 z-index-2 max-character-width">
           Stay connected with reliable HD meetings and unlimited one-on-one and
           group video sessions.
         </p>
-        <button z-index-2>Download v1.3</button>
+        <button class="button | z-index-2" data-type="secondary-2">Download <span class="text-purple-300">v1.3</span></button>
       </div>
     </footer>
   </body>
